@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import { useState } from "react";
 import { Collapse } from 'react-collapse';
-import "react-slidedown/lib/slidedown.css"
 
 
 const FaqItem = ({item,index}) => {
