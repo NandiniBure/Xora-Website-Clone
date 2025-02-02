@@ -24,9 +24,9 @@ const FaqItem = ({item,index}) => {
             <div className="g4 size-11/12 rounded-full shadow-300"/>
         </div>
      </div>
-     <Collapse>
+     <Collapse isOpened={active} >
         {activeId===item.id &&
-        <div className="body-3 px-7 py-3.5">{item.answer}</div>}
+        <div className="body-3 px-7 py-3.5 duration-500">{item.answer}</div>}
      </Collapse>
      <div className={clsx("g5 -bottom-7 -top-7 left-0 right-0 -z-1 rounded-3xl opacity-0 transition-opacity duration-500 absolute",
      active && "opacity-100" )}>
